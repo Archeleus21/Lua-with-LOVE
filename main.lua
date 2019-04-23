@@ -1,17 +1,17 @@
 message = 0
-condition = -25
+test = 0
+pickle = 0
 
-if condition > 0 then
-  message = 1
-elseif condition < -100 then
-  message = -1
-elseif condition == -25 then
-  message = "Condition is -25!"
-else
-  message = "No condition is met!"
+while message < 10 do
+  message = message + 1
+  test = test - 5
+end
+
+for i = 1, 3, 1 do
+  pickle = pickle + i
 end
 
 function love.draw()
   love.graphics.setFont((love.graphics.newFont(50)))
-  love.graphics.print(message)
+  love.graphics.print(pickle)
 end
