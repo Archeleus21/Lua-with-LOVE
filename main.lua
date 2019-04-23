@@ -1,17 +1,15 @@
-message = 0
-param = 500
+message = 0  --global variable
+param = 500 --global variable
 
---[[
 --this function doubles a value
 function IncreaseMessage (i)
-  i = i * 2
+  local var = i;   --local variable
+  var = var * var
 
-  return i  -- body...
+  return var  -- body...
 end
 
---message = IncreaseMessage(param)
-
-]]
+message = IncreaseMessage(param)
 
 function love.draw()
   love.graphics.setFont((love.graphics.newFont(50)))
