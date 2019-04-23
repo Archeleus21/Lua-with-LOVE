@@ -18,6 +18,7 @@ testScoresB.subject = "history"
 
 --i and s is current item it is on
 --first loop i = 1 and s = 95 and increases per iteration or goes to next index
+--used to iterate through entire table
 for i,s in ipairs(testScoresB) do
   message = message + i
 end
@@ -29,7 +30,8 @@ table.insert(testScoresC, 95)
 table.insert(testScoresC, 87)
 table.insert(tableScoresC, 98)
 
---in lue you can use nil for nothing, which is like NULL
+--in lue you can use nil for nothing, which is like NULL and removes item from
+--index
 message = testScores[1]
 ]]
 
